@@ -26,9 +26,11 @@ void CppObject::SetTxt(const QString &txt)
         emit txtChanged(m_txt);
 }
 
-void CppObject::Echo(const QString &msg)
+QString CppObject::Echo(const QString &msg)
 {
         qDebug() << __PRETTY_FUNCTION__ << "  >>>  " << msg;
+
+        return QString{QString{__PRETTY_FUNCTION__} + QString{"return from CPP"}};
 }
 
 void CppObject::onRecvTxt(const QString &txt)

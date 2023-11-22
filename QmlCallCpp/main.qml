@@ -126,7 +126,7 @@ Window {
                         Q_INVOKABLE void Echo(const QString &msg);
                     */
                     // Call member function of CppObject
-                    cppObject.Echo("Call from QML")
+                    console.log(cppObject.Echo("Call from QML"))
                 }
             }
 

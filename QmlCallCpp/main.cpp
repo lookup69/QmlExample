@@ -7,6 +7,8 @@ int main(int argc, char *argv[])
 {
         QGuiApplication app(argc, argv);
 
+        // register to QML
+        // qmlRegisterType<C++ Class name> (url(import url), Major version, minor version,  NAME in QML)
         qmlRegisterType<CppObject>("CppObject", 1, 0, "CppObject");
 
         QQmlApplicationEngine engine;

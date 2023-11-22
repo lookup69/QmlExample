@@ -16,8 +16,8 @@ public:
         QString GetTxt();
         void    SetTxt(const QString &txt);
 
-
-        Q_INVOKABLE void Echo(const QString &msg);
+        // Invokable from QML
+        Q_INVOKABLE QString Echo(const QString &msg);
 signals:
         void txtChanged(const QString txt);
         void cntChanged(int m_cnt);

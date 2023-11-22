@@ -37,3 +37,6 @@
              root.onSendTxt.connect(cppObject.onRecvTxt)
              rectangle1.onSendTxt.connect(cppObject.onRecvTxt)
 
+Reference:
+https://www.cnblogs.com/linuxAndMcu/p/11961090.html
+https://blog.csdn.net/qq_34139994/article/details/105195328
