@@ -1,0 +1,18 @@
+- Layout
+  - the project conations files
+    - main.cpp
+    - main.qml
+    - resource.qrc
+- resource file
+  - .qrc is xml format, refer to resource.qrc
+    - The prefix attribute of <qresource> is "/" if not given by default
+      - the same as <qresource prefix="/">
+      - <file> file path
+    - Multiple qresouce tags can be defined, please refer to resource-2.qrc
+      - Access method prefix + file path (define in <file>)
+        - Refer to resource_2.qrc and main.qml(build with resource-2.qrc)
+- Replace qrc file to test
+  - Modify qrcExample.pro
+    - #RESOURCES += resource.qrc
+    - RESOURCES += resource_2.qrc
+  - Modify main.qml

@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource>
+		<file>main.qml</file>
+		<file>images/pexels-sebastian-bautista-9969589.jpg</file>
+	</qresource>
+</RCC>
